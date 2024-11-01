@@ -23,10 +23,15 @@ export const everyCombination = (config: Config): Results => {
     const r2 = getReel2(virtualReel2);
     const r3 = getReel3(virtualReel3);
 
-    const {win, jackpot, jackpotNegative} = determineWin(r1, r2, r3, config.bet);
+    const { win, jackpot, jackpotNegative } = determineWin(
+      r1,
+      r2,
+      r3,
+      config.bet
+    );
     totalWin += win;
-    if(jackpot) jackpotTriggered = jackpot
-    if(jackpotNegative) jackpotNegativeTriggered = jackpotNegativeTriggered
+    if (jackpot) jackpotTriggered = jackpot;
+    if (jackpotNegative) jackpotNegativeTriggered = jackpotNegativeTriggered;
 
     text = text.concat(`${virtualReel1} ${virtualReel2} ${virtualReel3}\n`);
     text = text.concat(`${r1} ${r2} ${r3}\n`);
@@ -49,11 +54,11 @@ export const everyCombination = (config: Config): Results => {
     if (err) throw err;
   });
 
-  if(jackpotTriggered){
-    totalWin += config.jackpotBonus
+  if (jackpotTriggered) {
+    totalWin += config.jackpotBonus;
   }
-  if(jackpotNegativeTriggered){
-    totalWin += config.jackpotNegativeBonus
+  if (jackpotNegativeTriggered) {
+    totalWin += config.jackpotNegativeBonus;
   }
   const wonBack = totalWin;
   const rtp = totalWin / coinIn;

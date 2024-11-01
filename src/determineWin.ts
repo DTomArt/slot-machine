@@ -91,8 +91,8 @@ export const determineWin = (
   if (r1 === REEL.TripleBar && r2 === REEL.BlackGold && r3 === REEL.BlackGold)
     win = 120;
 
-  let jackpotNegative = false
-  if (r1 === REEL.TripleBar && r2 === REEL.TripleBar && r3 === REEL.TripleBar){
+  let jackpotNegative = false;
+  if (r1 === REEL.TripleBar && r2 === REEL.TripleBar && r3 === REEL.TripleBar) {
     jackpotNegative = true;
     win = 115;
   }
@@ -103,5 +103,5 @@ export const determineWin = (
     win = 1000;
   }
 
-  return {win: win * bet, jackpot, jackpotNegative};
+  return { win: win * bet, jackpot, jackpotNegative };
 };
