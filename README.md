@@ -6,7 +6,7 @@ Program prompts user for number of spins. If you insert '-1' then the simulation
 Regardless of simulation mode, the results of simulation will be visible in newly created file after execution 'src/reels.txt' and in console you will get summary of your simulation. 
 
 ## How to run?
-Install packages using: `npm install` and then just use script: `npm run start`.
+Install packages using `npm install` and then just use script `npm run start`.
 
 ## Config
 You can configure the program changing 'config' object in 'src/index.ts' and changing virtual reel numbers range in 'src/reels.ts'. Default is based on actual machine slot documentation.
