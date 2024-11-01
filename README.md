@@ -12,6 +12,9 @@ Install packages using:
 and then just use script:
 `npm run start`
 
+## Config
+You can configure the program changing 'config' object in 'src/index.ts' and changing virtual reel numbers range in 'src/reels.ts'. Default is based on actual machine slot documentation.
+
 ## Run example and explanation of results
 Example of result from the program is following:
 ```
@@ -36,11 +39,6 @@ you won 0$                      <- amount won
 BLANK BLANK SINGLE_BAR
 you won 0$
 ```
-
-## Config
-You can configure the program changing 'config' object in 'src/index.ts' and changing virtual reel numbers range in 'src/reels.ts'. Default is based on actual machine slot documentation.
-
-
 
 
 *Implementation based on documentation of an actual machine slot: https://web.archive.org/web/20051215075607/http://ballygaming.com:80/media_library/pcsheets/6999.pdf*
