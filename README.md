@@ -3,7 +3,7 @@
 ## General idea
 This is a console application for simulating behaviour of a 72x72x72 reel slot machine written fully in Typescript.
 Program prompts user for number of spins. If you insert '-1' then the simulation for all possible combinations will start.
-Regardless of simulation mode, the results of simulation will be visible in newly created file 'src/reels.txt' and in console you will get summary of your simulation. 
+Regardless of simulation mode, the results of simulation will be visible in newly created file after execution 'src/reels.txt' and in console you will get summary of your simulation. 
 
 ## How to run?
 Install packages using:
@@ -24,6 +24,17 @@ coin in: 200 $      <- amount of money inserted to the machine (you can change c
 balance: -68 $      <- amount that you won back in game (totalWin - coinIn)
 RTP: 66 %           <- percent of the amount that machine slot gave you back in win
 you lost: 68 $       <- amount that you lost playing
+```
+
+Example of 2 spins in 'src/reels.txt' file created after execution:
+```
+28 2 56                         <- numbers randomly drawn on virtual reel
+DOUBLE_BAR SINGLE_BAR BLANK     <- virtual numbers converted to slot machine reel
+you won 0$                      <- amount won
+
+47 70 3
+BLANK BLANK SINGLE_BAR
+you won 0$
 ```
 
 
