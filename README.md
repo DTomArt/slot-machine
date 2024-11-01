@@ -41,5 +41,7 @@ you won 0$
 You can configure the program changing 'config' object in 'src/index.ts' and changing virtual reel numbers range in 'src/reels.ts'. Default is based on actual machine slot documentation.
 
 
+
+
 *Implementation based on documentation of an actual machine slot: https://web.archive.org/web/20051215075607/http://ballygaming.com:80/media_library/pcsheets/6999.pdf*
 *and also great explanation video from Vegas Education on YouTube: https://www.youtube.com/watch?v=AI8LkeIR6_8*
