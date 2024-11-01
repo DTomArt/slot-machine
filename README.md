@@ -21,13 +21,13 @@ You can configure the program changing 'config' object in 'src/index.ts' and cha
 ## Run example and explanation of results
 Example of result from the program is following:
 ```
-Enter integer number of spins or -1 for every combination: 100      <-inserted 100 for 100 spins
+Enter integer number of spins or -1 for every combination: 100   <-inserted 100 for 100 spins
 ---------------------------------------
 YOU WON TOTAL: 132!     <- total win from your game
 ---------------------------------------
 Total spins: 100    <- confirmation of spins executed
 coin in: 200 $      <- amount of money inserted to the machine 
-                        (you can change current bet at src/index.ts in config, default is 2 dollars)
+                      (you can change current bet at src/index.ts in config, default is 2 dollars)
 balance: -68 $      <- amount that you won back in game (totalWin - coinIn)
 RTP: 66 %           <- percent of the amount that machine slot gave you back in win
 you lost: 68 $      <- amount that you lost playing
@@ -39,9 +39,9 @@ Example of 2 spins in 'src/reels.txt' file created after execution:
 DOUBLE_BAR SINGLE_BAR BLANK     <- virtual numbers converted to slot machine reel
 you won 0$                      <- amount won
 
-47 70 3
-BLANK BLANK SINGLE_BAR
-you won 0$
+36 10 61
+BLACK_GOLD SINGLE_BAR BLANK
+you won 4$
 ```
 
 
