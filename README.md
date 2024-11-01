@@ -4,6 +4,12 @@
 This is a console application for simulating behaviour of a 72x72x72 reel slot machine written fully in Typescript.
 Program prompts user for number of spins. If you insert '-1' then the simulation for all possible combinations will start.
 Regardless of simulation mode, the results of simulation will be visible in newly created file after execution 'src/reels.txt' and in console you will get summary of your simulation. 
+All possible symbols to be drawn on slot machine(3 in one spin):
+- SINGLE_BAR,
+- DOUBLE_BAR,
+- TRIPLE_BAR,
+- BLACK_GOLD,
+- BLANK.
 
 ## How to run?
 Install packages using `npm install` and then just use script `npm run start`.
@@ -19,10 +25,11 @@ Enter integer number of spins or -1 for every combination: 100      <-inserted 1
 YOU WON TOTAL: 132!     <- total win from your game
 ---------------------------------------
 Total spins: 100    <- confirmation of spins executed
-coin in: 200 $      <- amount of money inserted to the machine (you can change current bet at src/index.ts in config, default is 2 dollars)
+coin in: 200 $      <- amount of money inserted to the machine 
+                        (you can change current bet at src/index.ts in config, default is 2 dollars)
 balance: -68 $      <- amount that you won back in game (totalWin - coinIn)
 RTP: 66 %           <- percent of the amount that machine slot gave you back in win
-you lost: 68 $       <- amount that you lost playing
+you lost: 68 $      <- amount that you lost playing
 ```
 
 Example of 2 spins in 'src/reels.txt' file created after execution:
