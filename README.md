@@ -4,6 +4,7 @@
 This is a console application for simulating behaviour of a 72x72x72 reel slot machine written fully in Typescript.
 Program prompts user for number of spins. If you insert '-1' then the simulation for all possible combinations will start.
 Regardless of simulation mode, the results of simulation will be visible in newly created file after execution 'src/reels.txt' and in console you will get summary of your simulation. 
+
 All possible symbols to be drawn on slot machine(3 in one spin):
 - SINGLE_BAR,
 - DOUBLE_BAR,
