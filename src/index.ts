@@ -14,7 +14,7 @@ const rl = readline.createInterface({
   output: process.stdout
 });
 
-rl.question('enter integer number of spins or -1 for every combination: ', (spinsArg) => {
+rl.question('Enter integer number of spins or -1 for every combination: ', (spinsArg) => {
   const numberOfSpins = Math.round(Number(spinsArg))
   if(!numberOfSpins || numberOfSpins < -1) throw new Error('Enter valid integer');
   const {totalWin, coinIn, lost, rtp, spins, wonBack} = numberOfSpins === -1 ? everyCombination(config) : play(config, numberOfSpins);
@@ -26,7 +26,7 @@ rl.question('enter integer number of spins or -1 for every combination: ', (spin
   console.log(`coin in: ${coinIn} $`)
   console.log(`balance: ${wonBack} $`)
   console.log(`RTP: ${rtp*100} %`)
-  console.log(`you lost: ${lost}$`)
+  console.log(`you lost: ${lost} $`)
 
   rl.close()
 });
