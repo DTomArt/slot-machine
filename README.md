@@ -14,7 +14,7 @@ and then just use script:
 
 ## Run example and explanation of results
 Example of result from the program is following:
-`
+```
 Enter integer number of spins or -1 for every combination: 100      <-inserted 100 for 100 spins
 ---------------------------------------
 YOU WON TOTAL: 132!     <- total win from your game
@@ -24,7 +24,7 @@ coin in: 200 $      <- amount of money inserted to the machine (you can change c
 balance: -68 $      <- amount that you won back in game (totalWin - coinIn)
 RTP: 66 %           <- percent of the amount that machine slot gave you back in win
 you lost: 68 $       <- amount that you lost playing
-` 
+```
 
 
 *Instruction and implementation based on documentation of an actual machine slot: https://web.archive.org/web/20051215075607/http://ballygaming.com:80/media_library/pcsheets/6999.pdf*
